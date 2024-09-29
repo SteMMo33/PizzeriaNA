@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/menu.css" />
 
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -131,17 +131,15 @@
     <div id="dlgSettings" class="modal">
       <div class="modal-content">
         <h6>Configurazione:</h6>
-        <form action='#'>
-          
-          <p><label for='cfgPizze'><input type='checkbox' id='cfgPizze' value='cfgPizze' /><span>Pizze</span></label></p>
-          <p><label for='cfgBevande'><input type='checkbox' id='cfgBevande' checked='checked'><span>Bevande</span></label></p>
-          <p><label for='cfgRistorante'><input type='checkbox' id='cfgRistorante' checked='checked' /><span>Ristorante</span></label></p>
-        </form>
+        <div style='font-size:25px'>
+          <div><label>Pizze</label><input type='checkbox'></div>
+          <div><label>Birre</label><input type='checkbox'></div>
+          <div><label>Ristorante</label><input type='checkbox'></div>
+        </div>
 
       <div class="modal-footer">
-        <a href="#!" onclick='saveCfg(event)' class="modal-close waves-effect waves-green btn-flat">Accetta</a>
+        <a href="#!" onclick='addToOrder(event)' class="modal-close waves-effect waves-green btn-flat">Aggiungi</a>
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Annulla</a>
-      </div>
       </div>
     </div>
   

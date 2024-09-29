@@ -242,7 +242,7 @@ function getOrdini(item) {
                         jsonOrder = "{\"ordine\":[{\"nome\":\"Problema nei dati\",\"qty\":\"-\"}]}"
                     if(jsonOrder.startsWith("["))
                         jsonOrder = "{\"ordine\":"+jsonOrder+"}"
-                    // console.log("json: ",jsonOrder)
+                    console.log("json: ",jsonOrder)
                     var objOrdine = JSON.parse(jsonOrder)
                     objOrdine.ordine.forEach(
                         function(elemento){
